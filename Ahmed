@@ -1,0 +1,18 @@
+var frag = document.location.hash;
+
+if (frag) {
+
+  try {
+
+    eval(frag.slice(1));
+
+  } catch(e) {
+
+    alert("URL fragment (#) contains invalid JS code!\nUse X55.is/[cmd] if not possible to edit fragment.");
+  }
+
+} else {
+
+  alert(2);
+
+}
